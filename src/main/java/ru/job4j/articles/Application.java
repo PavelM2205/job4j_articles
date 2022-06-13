@@ -9,6 +9,7 @@ import ru.job4j.articles.store.WordStore;
 
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class Application {
 
@@ -23,6 +24,7 @@ public class Application {
         var articleGenerator = new RandomArticleGenerator();
         var articleService = new SimpleArticleService(articleGenerator);
         articleService.generate(wordStore, TARGET_COUNT, articleStore);
+
     }
 
     private static Properties loadProperties() {
