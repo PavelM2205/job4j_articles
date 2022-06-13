@@ -9,7 +9,6 @@ import ru.job4j.articles.store.WordStore;
 
 import java.io.InputStream;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 public class Application {
 
